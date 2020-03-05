@@ -42,7 +42,7 @@ Then
 
 #### What it should be:
 ![clientside-result-in-terminal]
-(clientside-result-in-terminal.png)
+(https://github.com/sitthykun/bash-bundle/blob/3feb02d70fe82bd45cff25f14259c9ed3c7b77d2/clientside-result-in-terminal.png)
 #### Check the files
 ![clientside-result]
 (clientside-result.png)
