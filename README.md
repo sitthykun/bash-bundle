@@ -37,22 +37,8 @@ Then
 > `$  ./bash-bundle.sh`
 
 #### What it should be:
-![Image of clientside-result-in-terminal]
+![clientside-result-in-terminal]
 (https://sitthykun.github.com/images/clientside-result-in-terminal.png)
 #### Check the files
-![Image of clientside-result]
+![clientside-result]
 (https://sitthykun.github.com/images/clientside-result.png)
-
-# UML diagrams
-Js flow:
-```mermaid
-sequenceDiagram
-All Js files ->> app.base.js: combine
-app.base.js ->>app.js: optimize
-```
-Css flow:
-```mermaid
-sequenceDiagram
-All Css files ->> app.base.css: combine
-app.base.css ->>app.css: optimize
-```
