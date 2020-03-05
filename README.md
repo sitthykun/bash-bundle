@@ -15,8 +15,8 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 # Structure Files
 
 To start the script, the script requires some criteria folder and file structure below:
-![Image of clientside-folder-structure]
-(https://sitthykun.github.com/images/clientside-folder-structure.png)
+![clientside-folder-structure]
+(clientside-folder-structure.png)
 
 
 
