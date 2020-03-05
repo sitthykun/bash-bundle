@@ -18,7 +18,7 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 
 To start the script, the script requires some criteria folder and file structure below:
 ![clientside-folder-structure]
-(clientside-folder-structure.png)
+(https://github.com/sitthykun/bash-bundle/blob/8236a7b3cf60bd9118d5066ed08724f7a83ae08d/clientside-folder-structure.png)
 
 
 
@@ -45,4 +45,4 @@ Then
 (https://github.com/sitthykun/bash-bundle/blob/3feb02d70fe82bd45cff25f14259c9ed3c7b77d2/clientside-result-in-terminal.png)
 #### Check the files
 ![clientside-result]
-(clientside-result.png)
+(https://github.com/sitthykun/bash-bundle/blob/8236a7b3cf60bd9118d5066ed08724f7a83ae08d/clientside-result.png)
