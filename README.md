@@ -27,7 +27,8 @@ All the files has to name prefix in order the same as module structure too.
 It does not care about your suffix name 1_xxxxxx
 
 > #### Note:
-	>  Please make sure by keeping files in order to avoid the referent functions and variables are undefined or not found.
+	>  Please make sure by keeping files in order to avoid the referent
+	>  functions and variables are undefined or not found.
 
 # Execute
 
@@ -38,7 +39,7 @@ Then
 
 #### What it should be:
 ![clientside-result-in-terminal]
-(https://sitthykun.github.com/images/clientside-result-in-terminal.png)
+(clientside-result-in-terminal.png)
 #### Check the files
 ![clientside-result]
-(https://sitthykun.github.com/images/clientside-result.png)
+(clientside-result.png)
