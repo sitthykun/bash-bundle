@@ -76,5 +76,5 @@ figure 2:\
 figure 3:\
 [image] clientside-result.png
 
-#####from me: 
+##### from me: 
 a little developer in the big world \o/
