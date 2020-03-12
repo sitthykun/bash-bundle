@@ -3,23 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91f0d9cb-9c6d-4a75-a452-f94d4311050a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/1_module-name/css/1_css-name.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/1_module-name/css/1_css-name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/1_module-name/css/2_css-name.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/1_module-name/css/2_css-name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/1_module-name/js/1_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/1_module-name/js/1_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/1_module-name/js/2_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/1_module-name/js/2_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/1_module-name/js/3_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/1_module-name/js/3_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/2_module-name/css/1_css-name.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/2_module-name/css/1_css-name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/2_module-name/css/2_css-name.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/2_module-name/css/2_css-name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/2_module-name/js/1_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/2_module-name/js/1_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/2_module-name/js/2_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/2_module-name/js/2_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/2_module-name/js/3_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/2_module-name/js/3_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/3_module-name/css/1_css-name.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/3_module-name/css/1_css-name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/3_module-name/css/2_css-name.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/3_module-name/css/2_css-name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/3_module-name/js/1_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/3_module-name/js/1_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/3_module-name/js/2_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/3_module-name/js/2_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/page/3_module-name/js/3_js-name.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/module/3_module-name/js/3_js-name.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientside-folder-structure.png" beforeDir="false" afterPath="$PROJECT_DIR$/clientside-folder-structure.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
