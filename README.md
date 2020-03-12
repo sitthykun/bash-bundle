@@ -9,6 +9,7 @@ My objective is, to make people smile by managing a less files, and keep a clean
 ## Party Joiners
 
 This bash script needs a couple Nodejs modules to optimize the code such as:
+<<<<<<< HEAD
 1. uglifycss: \
     is a port of [YUI Compressor](https://github.com/yui/yuicompressor) to [NodeJS](http://nodejs.org/) for its CSS part.
 	#### Installation:
@@ -26,12 +27,28 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 	```
     $ npm install terser -g
 	```
+=======
+1. uglifycss: UglifyCSS is a port of [YUI Compressor](https://github.com/yui/yuicompressor) to [NodeJS](http://nodejs.org/) for its CSS part. Its name is a reference to the awesome [UglifyJS](https://github.com/mishoo/UglifyJS) but UglifyCSS is not a CSS parser. Like YUI CSS Compressor, it applies many regexp replacements. Note that a [port to JavaScript](https://github.com/yui/ycssmin) is also available in the YUI Compressor repository.
+
+	> #### Installation:
+		> `$ npm install uglifycss -g`
+2. terser: A JavaScript parser and mangler/compressor toolkit for ES6+.
+
+	> #### Installation:
+		> `$ npm install uglifycss -g`
+>>>>>>> 9d5d71e870273eee768f19188d1bc1c5f3e0cfdd
 
 ## Structure Files
 
+<<<<<<< HEAD
 To start the script, the script requires some criteria folder and file structure below:\
 figure 1:\
 [image] clientside-folder-structure.png
+=======
+To start the script, the script requires some criteria folder and file structure below:
+![clientside-folder-structure]
+(https://github.com/sitthykun/bash-bundle/blob/8236a7b3cf60bd9118d5066ed08724f7a83ae08d/clientside-folder-structure.png)
+>>>>>>> 9d5d71e870273eee768f19188d1bc1c5f3e0cfdd
 
 
 
@@ -42,10 +59,15 @@ All the files has to put prefix in order the same as module structure too.
 It does not care about your suffix name 1_xxxxxx
 
 > #### Note:
+<<<<<<< HEAD
 	  Please make sure by keeping files in order to avoid the reference
 	  functions and variables are undefined or not found.
 
 ## Execute
+=======
+	>  `Please make sure by keeping files in order to avoid the referent`
+	>  `functions and variables are undefined or not found.`
+>>>>>>> 9d5d71e870273eee768f19188d1bc1c5f3e0cfdd
 
 Normally, the script is not be able to execute because of permission. Grant execute permission in short code
 ```
@@ -53,7 +75,13 @@ $  sudo chmod +x bash-bundle.sh
 or
 $  chmod +x bash-bundle.sh
 
+<<<<<<< HEAD
 ```
+=======
+Normally, the script is not able to execute because of permission. Grant execute permission in short code
+
+> `$  chmod +x bash-bundle.sh`
+>>>>>>> 9d5d71e870273eee768f19188d1bc1c5f3e0cfdd
 Then
 ```
 $  ./bash-bundle.sh
@@ -70,6 +98,7 @@ Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ```
 
 #### What it should be:
+<<<<<<< HEAD
 figure 2:\
 [image] clientside-result-in-terminal.png
 #### Check the files
@@ -78,3 +107,10 @@ figure 3:\
 
 #####from me: 
 a little developer in the big world \o/
+=======
+![picture]
+(https://github.com/sitthykun/bash-bundle/blob/3feb02d70fe82bd45cff25f14259c9ed3c7b77d2/clientside-result-in-terminal.png)
+#### Check the files
+![clientside-result]
+(https://github.com/sitthykun/bash-bundle/blob/8236a7b3cf60bd9118d5066ed08724f7a83ae08d/clientside-result.png)
+>>>>>>> 9d5d71e870273eee768f19188d1bc1c5f3e0cfdd
