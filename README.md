@@ -57,6 +57,10 @@ $  chmod +x bash-bundle.sh
 Then
 ```
 $  ./bash-bundle.sh
+or
+$ sh bash-bundle.sh
+or
+$ bash bash-bundle.sh
 ```
 Output
 ```
