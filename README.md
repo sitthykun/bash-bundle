@@ -1,4 +1,5 @@
 # Bash Bundle! (2Bs)
+![bash-bundle-1](https://user-images.githubusercontent.com/227092/76992204-7439e080-697d-11ea-9525-76388ed6d1e8.png)
 
 It is a bash script that would assist web developer to optimize and combine the client-side(javascript, cascade style sheet) code into the separated files. At the end of processing, if there is no problem, it would create two files as **app.js** and **app.css**.\
 Not like a traditional structure style, that we need use many files in head block, and keep them in order. 
