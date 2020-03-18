@@ -32,7 +32,7 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 
 To start the script, the script requires some criteria folder and file structure below:\
 figure 1:\
-[image] clientside-folder-structure.png
+![clientside-folder-structure](https://user-images.githubusercontent.com/227092/76994224-a6007680-6980-11ea-96fb-ee6326a8ce1a.png)
 
 
 
@@ -76,10 +76,11 @@ Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #### What it should be:
 figure 2:\
-[image] clientside-result-in-terminal.png
+![clientside-result](https://user-images.githubusercontent.com/227092/76994375-db0cc900-6980-11ea-8b13-7f0ce8f616d1.png)
+
 #### Check the files
 figure 3:\
-[image] clientside-result.png
+![clientside-result-in-terminal](https://user-images.githubusercontent.com/227092/76994330-cb8d8000-6980-11ea-828a-74423e948b72.png)
 
 ##### from me: 
 a little developer in the big world \o/
