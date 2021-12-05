@@ -81,6 +81,3 @@ figure 2:\
 #### Check the files
 figure 3:\
 ![clientside-result-in-terminal](https://user-images.githubusercontent.com/227092/76994330-cb8d8000-6980-11ea-828a-74423e948b72.png)
-
-##### from me: 
-a little developer in the big world \o/
