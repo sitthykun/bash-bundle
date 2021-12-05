@@ -81,3 +81,5 @@ figure 2:\
 #### Check the files
 figure 3:\
 ![clientside-result-in-terminal](https://user-images.githubusercontent.com/227092/76994330-cb8d8000-6980-11ea-828a-74423e948b72.png)
+
+To Support my work, please donate me via <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sitthykun"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a Pizza"><span style="margin-left:5px;font-size:28px !important;">Buy me a Coffee</span></a>
