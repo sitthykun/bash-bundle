@@ -11,8 +11,21 @@ AppJsBase="$RootPath"app.base.js
 # dir
 AppJsDirPatterns=($PagePath/[0-9]_*/js/[0-9]_*.js $PagePath/[0-9]_*/js/[0-9][0-9]_*.js $PagePath/[0-9][0-9]_*/js/[0-9]_*.js $PagePath/[0-9][0-9]_*/js/[0-9][0-9]_*.js)
 AppCssDirPatterns=($PagePath/[0-9]_*/css/[0-9]_*.css $PagePath/[0-9]_*/css/[0-9][0-9]_*.css $PagePath/[0-9][0-9]_*/css/[0-9]_*.css $PagePath/[0-9][0-9]_*/css/[0-9][0-9]_*.css)
+
 # production environment
-isPro=1
+isPro=0
+
+# enviroment
+checkEnv()
+{
+	# find any condition
+	for p in "$1" ; do
+		if [ $p = "env=pro" ] ; then
+			isPro=1
+			break
+		fi
+	done
+}
 
 # css task
 doCss()
@@ -49,7 +62,7 @@ doCss()
 	uglifycss $AppCssBase > $AppCss
 
 	# check environment
-	if [ isPro ]; then
+	if [ $isPro = 1 ]; then
 		# remove base file
 		rm $AppCssBase
 	fi
@@ -103,6 +116,9 @@ doResult()
 	echo " > $AppCss"
 	echo " > $AppJs"
 }
+
+# check environment and apply
+checkEnv $@
 
 # start block
 echo -e "\e[92mStarting >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
