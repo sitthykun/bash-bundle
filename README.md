@@ -57,7 +57,7 @@ $  chmod +x bash-bundle.sh
 ```
 Then
 ```
-$  ./bash-bundle.sh
+$  ./bash-bundle.sh env=pro
 or
 $ sh bash-bundle.sh
 or
