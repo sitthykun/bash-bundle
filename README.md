@@ -55,13 +55,14 @@ or
 $  chmod +x bash-bundle.sh
 
 ```
-Then
+Then run command if it's production.
+By default it won't need env=pro
 ```
 $  ./bash-bundle.sh env=pro
 or
-$ sh bash-bundle.sh
+$ sh bash-bundle.sh  env=pro
 or
-$ bash bash-bundle.sh
+$ bash bash-bundle.sh  env=pro
 ```
 Output
 ```
