@@ -21,7 +21,7 @@ checkEnv()
 {
 	# find any condition
 	for p in "$1" ; do
-		if [ $p = "env=pro" ] ; then
+		if [[ $p = "env=pro" ]] ; then
 			isPro=1
 			break
 		fi
