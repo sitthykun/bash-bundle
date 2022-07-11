@@ -24,10 +24,10 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 	
 2. terser: A JavaScript parser and mangler/compressor toolkit for ES6+.
 	#### Installation:
+	Local instaltion
 	```
-    $ npm install terser -g
+    $ npm install terser
 	```
-
 ## Structure Files
 
 To start the script, the script requires some criteria folder and file structure below:\
