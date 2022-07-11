@@ -1,8 +1,8 @@
 #!/bin/bash
-# version 1.0.0
+# version 1.1.0
 
 # declare variables
-RootPath=./assets/
+RootPath=./asset/
 PagePath="$RootPath"page
 # name
 AppCss="$RootPath"app.css
@@ -22,6 +22,7 @@ checkEnv()
 	# find any condition
 	for p in "$1" ; do
 		if [[ $p = "env=pro" ]] ; then
+			echo "environment is pro"
 			isPro=1
 			break
 		fi
@@ -60,7 +61,7 @@ doCss()
 	done
 
 	# compress
-	uglifycss $AppCssBase > $AppCss
+	node_modules/uglifycss/uglifycss $AppCssBase > $AppCss
 
 	# check environment
 	if [ $isPro = 1 ]; then
@@ -101,7 +102,7 @@ doJs()
 	done
 
 	# compress
-	terser $AppJsBase -o $AppJs
+	node_modules/terser/bin/terser $AppJsBase -o $AppJs
 
 	# check environment
 	if [ isPro ]; then
@@ -118,8 +119,18 @@ doResult()
 	echo " > $AppJs"
 }
 
+# print out third party versions
+printVersion()
+{
+	node_modules/uglifycss/uglifycss --version
+	node_modules/terser/bin/terser --version
+}
+
 # check environment and apply
 checkEnv $@
+
+# print out third party versions
+printVersion
 
 # start block
 echo -e "\e[92mStarting >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
