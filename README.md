@@ -7,7 +7,7 @@ Once a project becomes a big with many developers, it almost can mess around us.
 
 My objective is, to make people smile by managing a less files, and keep a clean head. 
 
-## Party Joiners
+## Third parties require
 
 This bash script needs a couple Nodejs modules to optimize the code such as:
 1. uglifycss: \
