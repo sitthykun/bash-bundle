@@ -1,5 +1,10 @@
 #!/bin/bash
-# version 1.1.0
+# version 1.2.0
+# argument command
+CMD_KEY=''
+CMD_VALUE=''
+# command list
+CMD_ENV='env'
 
 # declare variables
 RootPath=./asset/
@@ -20,11 +25,19 @@ isPro=0
 checkEnv()
 {
 	# find any condition
-	for p in "$1" ; do
-		if [[ $p = "env=pro" ]] ; then
-			echo "environment is pro"
-			isPro=1
-			break
+	for opt in "$@" ; do
+		# get command
+		CMD_KEY="${opt%=*}"
+		CMD_VALUE="${opt#*=}"
+
+		# filter environment
+		if [[ ${CMD_KEY} = ${CMD_ENV} ]] ; then
+			# production environment
+			if [[ ${CMD_VALUE} = "pro" ]] ; then
+				echo "The environment is pro"
+				isPro=1
+				break
+			if
 		fi
 	done
 }
