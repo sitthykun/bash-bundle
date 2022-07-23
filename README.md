@@ -28,6 +28,12 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 	```
     $ npm install terser
 	```
+## Note**
+If you don't wanna install each module, you just run the below to install all requirements by just a command.
+```
+$ bash init-bundle.sh
+```
+
 ## Structure Files
 
 To start the script, the script requires some criteria folder and file structure below:\
@@ -36,7 +42,7 @@ figure 1:\
 
 
 
-**assets** is along a root folder with bash-bundle.sh
+**assets** is along a root folder with build-bundle.sh
 All module names has to name by using prefix as a digit that starts from 1 to 99.
 Each module contains js and css folder that obtain files too.
 All the files has to put prefix in order the same as module structure too.
@@ -50,19 +56,19 @@ It does not care about your suffix name 1_xxxxxx
 
 Normally, the script is not be able to execute because of permission. Grant execute permission in short code
 ```
-$  sudo chmod +x bash-bundle.sh
+$  sudo chmod +x build-bundle.sh
 or
-$  chmod +x bash-bundle.sh
+$  chmod +x build-bundle.sh
 
 ```
 Then run command if it's production.
 By default it won't need env=pro
 ```
-$  ./bash-bundle.sh env=pro
+$  ./build-bundle.sh env=pro
 or
-$ sh bash-bundle.sh  env=pro
+$ sh build-bundle.sh  env=pro
 or
-$ bash bash-bundle.sh  env=pro
+$ bash build-bundle.sh  env=pro
 ```
 Output
 ```
