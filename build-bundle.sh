@@ -37,7 +37,7 @@ checkEnv()
 				echo "The environment is pro"
 				isPro=1
 				break
-			if
+			fi
 		fi
 	done
 }
