@@ -4,7 +4,7 @@
 CMD_KEY=''
 CMD_VALUE=''
 # command list
-CMD_ENV='env'
+CMD_LIST_ENV='env'
 
 # declare variables
 RootPath=./asset/
@@ -31,7 +31,7 @@ checkEnv()
 		CMD_VALUE="${opt#*=}"
 
 		# filter environment
-		if [[ ${CMD_KEY} = ${CMD_ENV} ]] ; then
+		if [[ ${CMD_KEY} = ${CMD_LIST_ENV} ]] ; then
 			# production environment
 			if [[ ${CMD_VALUE} = "pro" ]] ; then
 				echo "The environment is pro"
