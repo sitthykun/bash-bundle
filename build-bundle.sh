@@ -7,7 +7,7 @@ CMD_VALUE=''
 CMD_LIST_ENV='env'
 
 # declare variables
-RootPath=./asset/
+RootPath=./assets/
 PagePath="$RootPath"page
 # name
 AppCss="$RootPath"app.css
