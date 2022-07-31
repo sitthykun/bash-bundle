@@ -1,10 +1,11 @@
 #!/bin/bash
-# version 1.3.4
+# version 1.4.0
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
 # command list
 CMD_LIST_ENV='env'
+CMD_LIST_INIT='init'
 
 # declare variables
 RootPath=./assets/
@@ -21,14 +22,22 @@ AppCssDirPatterns=($PagePath/[0-9]_*/css/[0-9]_*.css $PagePath/[0-9]_*/css/[0-9]
 # production environment
 isPro=0
 
-# enviroment
-checkEnv()
+# cmd
+doCMD()
 {
 	# find any condition
 	for opt in "$@" ; do
 		# get command
 		CMD_KEY="${opt%=*}"
 		CMD_VALUE="${opt#*=}"
+
+		# filter cmd
+		if [[ ${CMD_KEY} = ${CMD_LIST_INIT} ]] ; then
+			# call initilize build-bundle
+			doInit
+			# exit code
+			exit 0
+		fi
 
 		# filter environment
 		if [[ ${CMD_KEY} = ${CMD_LIST_ENV} ]] ; then
@@ -81,6 +90,24 @@ doCss()
 		# remove base file
 		rm $AppCssBase
 	fi
+}
+
+# install js tools
+doInit()
+{
+	# inform
+	echo -e "\e[93mInitialize ..."
+	# update npm
+	# more: https://docs.npmjs.com/try-the-latest-stable-version-of-npm
+	#npm install -g npm@latest
+
+	echo -e "\e[93mInstalling uglifycss ..."
+	# optimize css
+	npm install uglifycss
+
+	echo -e "\e[93mInstalling terser ..."
+	# optimize js
+	npm install terser
 }
 
 # javascript task
@@ -139,8 +166,8 @@ printVersion()
 	node_modules/terser/bin/terser --version
 }
 
-# check environment and apply
-checkEnv $@
+# check cmd
+doCMD $@
 
 # print out third party versions
 printVersion
