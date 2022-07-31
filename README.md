@@ -31,7 +31,7 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 ## Note**
 If you don't wanna install each module, you just run the below to install all requirements by just a command.
 ```
-$ bash init-bundle.sh
+$ bash build-bundle.sh init
 ```
 
 ## Structure Files
