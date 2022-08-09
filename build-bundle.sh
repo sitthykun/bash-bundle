@@ -1,11 +1,13 @@
 #!/bin/bash
-# version 1.4.0
+# version 1.4.1
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
 # command list
 CMD_LIST_ENV='env'
 CMD_LIST_INIT='init'
+# environment
+ENV_PRO='pro'
 
 # declare variables
 RootPath=./assets/
@@ -42,8 +44,8 @@ doCMD()
 		# filter environment
 		if [[ ${CMD_KEY} = ${CMD_LIST_ENV} ]] ; then
 			# production environment
-			if [[ ${CMD_VALUE} = "pro" ]] ; then
-				echo "The environment is pro"
+			if [[ ${CMD_VALUE} = ${ENV_PRO} ]] ; then
+				echo "The environment is $ENV_PRO"
 				isPro=1
 				break
 			fi
