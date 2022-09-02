@@ -25,7 +25,7 @@ AppCssDirPatterns=($PagePath/[0-9]_*/css/[0-9]_*.css $PagePath/[0-9]_*/css/[0-9]
 isPro=0
 
 # cmd
-doCMD()
+doCmd()
 {
 	# find any condition
 	for opt in "$@" ; do
@@ -169,7 +169,7 @@ printVersion()
 }
 
 # check cmd
-doCMD $@
+doCmd $@
 
 # print out third party versions
 printVersion
