@@ -1,5 +1,7 @@
 #!/bin/bash
-# version 1.4.1
+# author masakokh
+# note build client bundle
+# version 1.4.2
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
@@ -61,14 +63,14 @@ doCss()
 
 	# create app file
 	if [ ! -e $AppCss ]; then
-        touch $AppCss
+        	touch $AppCss
 	else
 		truncate -s 0 $AppCss
 	fi
 
 	# create base file
 	if [ ! -e $AppCssBase ]; then
-        touch $AppCssBase
+        	touch $AppCssBase
 	fi
 
 	# find all in list
@@ -76,9 +78,7 @@ doCss()
 	do
 		# check file first
 		if [ -f "$FileCss" ]; then
-	        echo " > $FileCss";
-			# title as file name
-			#echo "/* $FileCss */" >> $AppCssBase;
+	        	echo " > $FileCss";
 			# merge css
 			cat $FileCss >> $AppCssBase;
 		fi
@@ -88,7 +88,7 @@ doCss()
 	node_modules/uglifycss/uglifycss $AppCssBase > $AppCss
 
 	# check environment
-	if [ $isPro = 1 ]; then
+	if [ isPro ]; then
 		# remove base file
 		rm $AppCssBase
 	fi
@@ -136,8 +136,6 @@ doJs()
 		# check file first
 		if [ -f "$FileJs" ]; then
 			echo " > $FileJs";
-			# title as file name
-			#echo "// $FileJs" >> $AppJsBase;
 			# merge js
 			cat $FileJs >> $AppJsBase;
 		fi
