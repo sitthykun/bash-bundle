@@ -5,7 +5,33 @@ It is a bash script that would assist web developer to optimize and combine the 
 Not like a traditional structure style, that we need use many files in head block, and keep them in order. 
 Once a project becomes a big with many developers, it almost can mess around us.
 
-My objective is, to make people smile by managing a less files, and keep a clean head. 
+My objective is, to make people smile by managing a less files, and keep a clean head.\
+It's on the move.\
+I'm happy to release a new version 1.4.3
+
+## Getting started
+```
+== help ========
+    ex:
+    $ bash build-bundle.sh help
+== init build-bundle env ========
+    ex:
+    $ bash build-bundle.sh init
+== build by environment ========
+The command below will run a default environment with keeping the reserve files
+    ex:
+    $ bash build-bundle.sh
+pro is an environment that removes the reserve compression files
+    ex:
+    $ bash build-bundle.sh env=pro
+with another environment
+    ex:
+    $ bash build-bundle.sh env=dev
+== update the compression library ========
+    ex:
+    $ bash build-bundle.sh update
+
+```
 
 ## Third parties require
 
