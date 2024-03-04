@@ -1,27 +1,29 @@
 #!/bin/bash
 # author masakokh
 # note build client bundle
-# version 1.4.2
+# version 1.4.3
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
 # command list
 CMD_LIST_ENV='env'
+CMD_LIST_HELP='help'
 CMD_LIST_INIT='init'
+CMD_LIST_UPDATE='update'
 # environment
 ENV_PRO='pro'
 
 # declare variables
 RootPath=./assets/
-PagePath="$RootPath"page
+ModulePath="$RootPath"module
 # name
 AppCss="$RootPath"app.css
 AppCssBase="$RootPath"app.base.css
 AppJs="$RootPath"app.js
 AppJsBase="$RootPath"app.base.js
 # dir
-AppJsDirPatterns=($PagePath/[0-9]_*/js/[0-9]_*.js $PagePath/[0-9]_*/js/[0-9][0-9]_*.js $PagePath/[0-9][0-9]_*/js/[0-9]_*.js $PagePath/[0-9][0-9]_*/js/[0-9][0-9]_*.js)
-AppCssDirPatterns=($PagePath/[0-9]_*/css/[0-9]_*.css $PagePath/[0-9]_*/css/[0-9][0-9]_*.css $PagePath/[0-9][0-9]_*/css/[0-9]_*.css $PagePath/[0-9][0-9]_*/css/[0-9][0-9]_*.css)
+AppJsDirPatterns=($ModulePath/[0-9]_*/js/[0-9]_*.js $ModulePath/[0-9]_*/js/[0-9][0-9]_*.js $ModulePath/[0-9][0-9]_*/js/[0-9]_*.js $ModulePath/[0-9][0-9]_*/js/[0-9][0-9]_*.js)
+AppCssDirPatterns=($ModulePath/[0-9]_*/css/[0-9]_*.css $ModulePath/[0-9]_*/css/[0-9][0-9]_*.css $ModulePath/[0-9][0-9]_*/css/[0-9]_*.css $ModulePath/[0-9][0-9]_*/css/[0-9][0-9]_*.css)
 
 # production environment
 isPro=0
@@ -43,6 +45,14 @@ doCmd()
 			exit 0
 		fi
 
+		# filter cmd
+		if [[ ${CMD_KEY} = ${CMD_LIST_HELP} ]] ; then
+			# call help build-bundle
+			doHelp
+			# exit code
+			exit 0
+		fi
+
 		# filter environment
 		if [[ ${CMD_KEY} = ${CMD_LIST_ENV} ]] ; then
 			# production environment
@@ -52,6 +62,15 @@ doCmd()
 				break
 			fi
 		fi
+
+		# filter update package
+		if [[ ${CMD_KEY} = ${CMD_LIST_UPDATE} ]] ; then
+			# call update build-bundle
+			doUpdate
+			# exit code
+			exit 0
+		fi
+
 	done
 }
 
@@ -92,6 +111,34 @@ doCss()
 		# remove base file
 		rm $AppCssBase
 	fi
+}
+
+# help
+doHelp()
+{
+  # man
+  echo "help ========"
+  echo " ex:"
+  echo " $ bash build-bundle.sh help"
+
+  echo "init build-bundle env ========"
+  echo " ex:"
+  echo " $ bash build-bundle.sh init"
+
+  echo "build by environment ========"
+  echo "The command below will run a default environment with keeping the reserve files"
+  echo " ex:"
+  echo "$ bash build-bundle.sh"
+  echo "pro is an environment that removes the reserve compression files"
+  echo " ex:"
+  echo " $ bash build-bundle.sh env=pro"
+  echo "with another environment"
+  echo " ex:"
+  echo " $ bash build-bundle.sh env=dev"
+
+  echo "update the compression library ========"
+  echo " ex:"
+  echo " $ bash build-bundle.sh update"
 }
 
 # install js tools
@@ -157,6 +204,17 @@ doResult()
 	echo -e "\e[93mFind them ..."
 	echo " > $AppCss"
 	echo " > $AppJs"
+}
+
+# update library
+doUpdate()
+{
+	# Update
+	echo -e "\e[93mUpdating ..."
+	# optimize css
+	npm update
+
+	echo -e "\e[93mFinishing ..."
 }
 
 # print out third party versions
