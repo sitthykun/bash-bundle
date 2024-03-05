@@ -1,7 +1,8 @@
 #!/bin/bash
-# author masakokh
-# note build client bundle
-# version 1.4.3
+# author: masakokh
+# year: 2024
+# note: build client bundle
+# version: 1.4.3
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
@@ -117,28 +118,28 @@ doCss()
 doHelp()
 {
   # man
-  echo "help ========"
-  echo " ex:"
-  echo " $ bash build-bundle.sh help"
+  echo "== help ========"
+  echo "    ex:"
+  echo "    $ bash build-bundle.sh help"
 
-  echo "init build-bundle env ========"
-  echo " ex:"
-  echo " $ bash build-bundle.sh init"
+  echo "== init build-bundle env ========"
+  echo "    ex:"
+  echo "    $ bash build-bundle.sh init"
 
-  echo "build by environment ========"
+  echo "== build by environment ========"
   echo "The command below will run a default environment with keeping the reserve files"
-  echo " ex:"
-  echo "$ bash build-bundle.sh"
+  echo "    ex:"
+  echo "    $ bash build-bundle.sh"
   echo "pro is an environment that removes the reserve compression files"
-  echo " ex:"
-  echo " $ bash build-bundle.sh env=pro"
+  echo "    ex:"
+  echo "    $ bash build-bundle.sh env=pro"
   echo "with another environment"
-  echo " ex:"
-  echo " $ bash build-bundle.sh env=dev"
+  echo "    ex:"
+  echo "    $ bash build-bundle.sh env=dev"
 
-  echo "update the compression library ========"
-  echo " ex:"
-  echo " $ bash build-bundle.sh update"
+  echo "== update the compression library ========"
+  echo "    ex:"
+  echo "    $ bash build-bundle.sh update"
 }
 
 # install js tools
