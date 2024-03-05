@@ -113,6 +113,6 @@ figure 2:\
 
 #### Check the files
 figure 3:\
-![clientside-result-in-terminal](https://user-images.githubusercontent.com/227092/76994330-cb8d8000-6980-11ea-828a-74423e948b72.png)
+<img width="278" alt="Screenshot 2024-03-05 at 2 09 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/e46661a0-152c-41d8-9858-7c3c37c9e377">
 
 To Support my work, please donate me via <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sitthykun"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a Pizza"><span style="margin-left:5px;font-size:28px !important;">Buy me a Coffee</span></a>
