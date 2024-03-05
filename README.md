@@ -109,10 +109,10 @@ Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #### What it should be:
 figure 2:\
-<img width="278" alt="Screenshot 2024-03-05 at 2 09 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/e46661a0-152c-41d8-9858-7c3c37c9e377">
+<img width="597" alt="Screenshot 2024-03-05 at 2 08 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/f95b9891-d157-4be6-ae71-734390c82697">
 
 #### Check the files
 figure 3:\
-<img width="597" alt="Screenshot 2024-03-05 at 2 08 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/f95b9891-d157-4be6-ae71-734390c82697">
+<img width="278" alt="Screenshot 2024-03-05 at 2 09 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/e46661a0-152c-41d8-9858-7c3c37c9e377">
 
 To Support my work, please donate me via <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sitthykun"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a Pizza"><span style="margin-left:5px;font-size:28px !important;">Buy me a Coffee</span></a>
