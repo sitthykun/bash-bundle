@@ -113,6 +113,6 @@ figure 2:\
 
 #### Check the files
 figure 3:\
-<img width="278" alt="Screenshot 2024-03-05 at 2 09 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/e46661a0-152c-41d8-9858-7c3c37c9e377">
+<img width="264" alt="Screenshot 2024-03-05 at 2 19 31 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/8212f4da-56e7-455b-b6ea-9840f991743d">
 
 To Support my work, please donate me via <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/sitthykun"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a Pizza"><span style="margin-left:5px;font-size:28px !important;">Buy me a Coffee</span></a>
