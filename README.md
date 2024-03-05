@@ -11,24 +11,27 @@ I'm happy to release a new version 1.4.3
 
 ## Getting started
 ```
-== help ========
-    ex:
+----------------------------------------------------------------------------------
+//-- help ------------------------------------------------------------------------
     $ bash build-bundle.sh help
-== init build-bundle env ========
-    ex:
+
+----------------------------------------------------------------------------------
+//-- init build-bundle env -------------------------------------------------------
     $ bash build-bundle.sh init
-== build by environment ========
-The command below will run a default environment with keeping the reserve files
-    ex:
+
+----------------------------------------------------------------------------------
+//-- build by environment --------------------------------------------------------
+  The command below will run a default environment with keeping the reserve files
     $ bash build-bundle.sh
-pro is an environment that removes the reserve compression files
-    ex:
+
+  pro is an environment that removes the reserve compression files
     $ bash build-bundle.sh env=pro
-with another environment
-    ex:
+
+  with another environment
     $ bash build-bundle.sh env=dev
-== update the compression library ========
-    ex:
+
+----------------------------------------------------------------------------------
+//-- update the compression libraries --------------------------------------------
     $ bash build-bundle.sh update
 
 ```
