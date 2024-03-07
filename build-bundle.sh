@@ -2,7 +2,7 @@
 # author: masakokh
 # year: 2024
 # note: build client bundle
-# version: 1.4.3
+# version: 1.4.4
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
@@ -16,7 +16,7 @@ ENV_PRO='pro'
 
 # declare variables
 RootPath=./assets/
-ModulePath="$RootPath"module
+ModulePath="$RootPath"modules
 # name
 AppCss="$RootPath"app.css
 AppCssBase="$RootPath"app.base.css
@@ -108,7 +108,7 @@ doCss()
 	node_modules/uglifycss/uglifycss $AppCssBase > $AppCss
 
 	# check environment
-	if [ isPro ]; then
+	if [ "$isPro" -gt 0 ]; then
 		# remove base file
 		rm $AppCssBase
 	fi
@@ -118,27 +118,25 @@ doCss()
 doHelp()
 {
   # man
-  echo "== help ========"
-  echo "    ex:"
+  echo "----------------------------------------------------------------------------------"
+  echo "//-- help ------------------------------------------------------------------------"
   echo "    $ bash build-bundle.sh help"
-
-  echo "== init build-bundle env ========"
-  echo "    ex:"
+  echo " "
+  echo "----------------------------------------------------------------------------------"
+  echo "//-- init build-bundle env -------------------------------------------------------"
   echo "    $ bash build-bundle.sh init"
-
-  echo "== build by environment ========"
-  echo "The command below will run a default environment with keeping the reserve files"
-  echo "    ex:"
+  echo " "
+  echo "----------------------------------------------------------------------------------"
+  echo "//-- build by environment --------------------------------------------------------"
+  echo "  The command below will run a default environment with keeping the reserve files"
   echo "    $ bash build-bundle.sh"
-  echo "pro is an environment that removes the reserve compression files"
-  echo "    ex:"
+  echo "  pro is an environment that removes the reserve compression files"
   echo "    $ bash build-bundle.sh env=pro"
-  echo "with another environment"
-  echo "    ex:"
+  echo "  with another environment"
   echo "    $ bash build-bundle.sh env=dev"
-
-  echo "== update the compression library ========"
-  echo "    ex:"
+  echo " "
+  echo "----------------------------------------------------------------------------------"
+  echo "//-- update the compression libraries --------------------------------------------"
   echo "    $ bash build-bundle.sh update"
 }
 
@@ -193,7 +191,7 @@ doJs()
 	node_modules/terser/bin/terser $AppJsBase -o $AppJs
 
 	# check environment
-	if [ isPro ]; then
+	if [ "$isPro" -gt 0 ]; then
 		# remove base file
 		rm $AppJsBase
 	fi
