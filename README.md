@@ -130,8 +130,8 @@ Find them ...
 > ./assets/app.js
 Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ```
-In production, please add argument 'env=pro' to remove 'app.base.css' and 'app.base.js'. \
 > #### Note:
+In production, please add argument 'env=pro' to remove 'app.base.css' and 'app.base.js'.\
 By default it won't need env=pro
 ```
 $ ./build-bundle.sh env=pro
