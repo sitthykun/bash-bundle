@@ -16,7 +16,7 @@ I'm happy to release a new version 1.4.5
 |  1.4.4 | 2024-Mar   | Fix environment  |
 |  1.4.5 | 2024-Mar  | Add new line while merging every file and clear a file before merge was fix  |
 
-## Getting started
+## Command list
 ```
 ----------------------------------------------------------------------------------
 //-- help ------------------------------------------------------------------------
@@ -43,18 +43,51 @@ I'm happy to release a new version 1.4.5
 
 ```
 
-## Third parties require
+## First step
+Prepare your structue files like below or look at figure 1
 
-This bash script needs a couple Nodejs modules to optimize the code such as:
+> #### Note:
+	  Please make sure by keeping files in order to avoid the reference
+	  functions and variables are undefined or not found.
+```
+assests
+	| modules
+		| 0_module1
+		| 1_module2
+			| css
+				| 0_name.css
+			| js
+				| 0_name.js
+```
+
+## Second step
+Download bash-bundle.sh and copy to alongside of your 'assets' directory
+**assets**
+All module names has to name by using prefix as number and add underscore '_'.
+The number must be positive value, it has to starts from 0 to 99.
+Each module name has to contains js and css folder that obtain files too.
+All the files has to put prefix in order the same as module structure too.
+It does not care about your suffix name 1_xxxxxx
+
+figure 1:\
+![clientside-folder-structure](https://user-images.githubusercontent.com/227092/76994224-a6007680-6980-11ea-96fb-ee6326a8ce1a.png)
+
+## Third step
+This bash file requires 'Nodejs' and 'NPM' are already installation to compress those js and css.
+Then it will start installing any dependencies base on npm package requirements
+```
+$ bash build-bundle.sh init
+```
+If you wanna manually install npm's package
 1. uglifycss: \
     is a port of [YUI Compressor](https://github.com/yui/yuicompressor) to [NodeJS](http://nodejs.org/) for its CSS part.
 	#### Installation:
 	Global installation uses -g
-	```
+    ```
     $ npm install uglifycss -g
     ```
-	Local installation
-	```
+    Local installation
+    ```
     $ npm install uglifycss
     ```
 	
@@ -64,64 +97,51 @@ This bash script needs a couple Nodejs modules to optimize the code such as:
 	```
     $ npm install terser
 	```
-## Note**
-If you don't wanna install each module, you just run the below to install all requirements by just a command.
-```
-$ bash build-bundle.sh init
-```
-
-## Structure Files
-
-To start the script, the script requires some criteria folder and file structure below:\
-figure 1:\
-![clientside-folder-structure](https://user-images.githubusercontent.com/227092/76994224-a6007680-6980-11ea-96fb-ee6326a8ce1a.png)
-
-
-
-**assets** is along a root folder with build-bundle.sh
-All module names has to name by using prefix as a digit that starts from 1 to 99.
-Each module contains js and css folder that obtain files too.
-All the files has to put prefix in order the same as module structure too.
-It does not care about your suffix name 1_xxxxxx
-
-> #### Note:
-	  Please make sure by keeping files in order to avoid the reference
-	  functions and variables are undefined or not found.
-
 ## Execute
 
-Normally, the script is not be able to execute because of permission. Grant execute permission in short code
+Normally, the script is not be able to execute because of permission. \
+Grant execute permission in short code
 ```
-$  sudo chmod +x build-bundle.sh
+$ sudo chmod +x build-bundle.sh
 or
-$  chmod +x build-bundle.sh
+$ chmod +x build-bundle.sh
+```
+Start now
+```
+$ bash build-bundle.sh
+```
+Then it overwrites and/or created 4 files.
+1. app.base.css
+2. app.css
+3. app.base.js
+4. app.js
 
-```
-Then run command if it's production.
-By default it won't need env=pro
-```
-$  ./build-bundle.sh env=pro
-or
-$ sh build-bundle.sh  env=pro
-or
-$ bash build-bundle.sh  env=pro
-```
-Output
+Note: 'app.base.css' and 'app.base.js' are not yet compress. \
+It makes us to know the plain structure and easy to track any error.
 ```
 Starting >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Combining CSS ...
 Combining JS ...
 Find them ...
- > ./assets/app.css
- > ./assets/app.js
+> ./assets/app.base.css
+> ./assets/app.css
+> ./assets/app.base.js
+> ./assets/app.js
 Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ```
-
-#### What it should be:
+In production, please add argument 'env=pro' to remove 'app.base.css' and 'app.base.js'. \
+Note: by default it won't need env=pro
+```
+$ ./build-bundle.sh env=pro
+or
+$ sh build-bundle.sh env=pro
+or
+$ bash build-bundle.sh env=pro
+```
 figure 2:\
 <img width="597" alt="Screenshot 2024-03-05 at 2 08 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/f95b9891-d157-4be6-ae71-734390c82697">
 
-#### Check the files
+#### Finally, 'app.js' and 'app.css' were generated in your drive if everything worked properly.
 figure 3:\
 <img width="264" alt="Screenshot 2024-03-05 at 2 19 31 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/8212f4da-56e7-455b-b6ea-9840f991743d">
 
