@@ -7,7 +7,14 @@ Once a project becomes a big with many developers, it almost can mess around us.
 
 My objective is, to make people smile by managing a less files, and keep a clean head.\
 It's on the move.\
-I'm happy to release a new version 1.4.3
+I'm happy to release a new version 1.4.5
+
+## Roadmap
+| Version  | Date  | Description  |
+|---|---|---|
+|  1.4.3 | 2024-Jan  | Clean up  |
+|  1.4.4 | 2024-Mar   | Fix environment  |
+|  1.4.5 | 2024-Mar  | Add new line while merging every file and clear a file before merge was fix  |
 
 ## Getting started
 ```
