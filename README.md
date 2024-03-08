@@ -116,7 +116,8 @@ Then it overwrites and/or created 4 files.
 3. app.base.js
 4. app.js
 
-Note: 'app.base.css' and 'app.base.js' are not yet compress. \
+> #### Note:
+'app.base.css' and 'app.base.js' are not yet compress.
 It makes us to know the plain structure and easy to track any error.
 ```
 Starting >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -130,7 +131,8 @@ Find them ...
 Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ```
 In production, please add argument 'env=pro' to remove 'app.base.css' and 'app.base.js'. \
-Note: by default it won't need env=pro
+> #### Note:
+By default it won't need env=pro
 ```
 $ ./build-bundle.sh env=pro
 or
