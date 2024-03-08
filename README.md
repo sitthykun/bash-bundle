@@ -15,6 +15,7 @@ I'm happy to release a new version 1.4.5
 |  1.4.3 | 2024-Jan  | Clean up  |
 |  1.4.4 | 2024-Mar   | Fix environment  |
 |  1.4.5 | 2024-Mar  | Add new line while merging every file and clear a file before merge was fix  |
+|  1.4.6 | 2024-Mar   | Fix empty file  |
 
 ## Command list
 ```
