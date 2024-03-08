@@ -2,7 +2,7 @@
 # author: masakokh
 # year: 2024
 # note: build client bundle
-# version: 1.4.5
+# version: 1.4.6
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
@@ -83,16 +83,18 @@ doCss()
 
 	# create app file
 	if [ ! -e $AppCss ]; then
-        	touch $AppCss
+      touch $AppCss
 	else
-		truncate -s 0 $AppCss
+#		truncate -s 0 $AppCss
+      cat /dev/null > $AppCss
 	fi
 
 	# create base file
 	if [ ! -e $AppCssBase ]; then
     touch $AppCssBase
   else
-	  truncate -s 0 $AppJsBase
+#	  truncate -s 0 $AppJsBase
+    cat /dev/null > $AppCssBase
 	fi
 
 	# find all in list
@@ -172,14 +174,16 @@ doJs()
 	if [ ! -e $AppJsBase ]; then
 		touch $AppJsBase
 	else
-	  truncate -s 0 $AppJsBase
+#	  truncate -s 0 $AppJsBase
+    cat /dev/null > $AppJsBase
 	fi
 
 	# create base file
 	if [ ! -e $AppJs ]; then
 		touch $AppJs
 	else
-		truncate -s 0 $AppJs
+#		truncate -s 0 $AppJs
+    cat /dev/null > $AppJs
 	fi
 
 	# find all in list
