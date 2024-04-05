@@ -7,40 +7,41 @@ Once a project becomes a big with many developers, it almost can mess around us.
 
 My objective is, to make people smile by managing a less files, and keep a clean head.\
 It's on the move.\
-I'm happy to release a new version 1.4.5
+I'm happy to release a new version 1.4.7
 
 ## Roadmap
 | Version  | Date  | Description  |
 |---|---|---|
 |  1.4.3 | 2024-Jan  | Clean up  |
 |  1.4.4 | 2024-Mar   | Fix environment  |
-|  1.4.5 | 2024-Mar  | Add new line while merging every file and clear a file before merge was fix  |
-|  1.4.6 | 2024-Mar   | Fix empty file  |
+|  1.4.5 | 2024-Mar  | Add a new line while merging every file and clear a file before merge was fixed  |
+|  1.4.6 | 2024-Mar  | Fix empty file  |
+|  1.4.7 | 2024-Apr  | Rename build-bundle.sh to bash-bundle, and fix on macos to make sure it works in both platforms, linux and macos  |
 
 ## Command list
 ```
 ----------------------------------------------------------------------------------
 //-- help ------------------------------------------------------------------------
-    $ bash build-bundle.sh help
+    $ bash bash-bundle.sh help
 
 ----------------------------------------------------------------------------------
-//-- init build-bundle env -------------------------------------------------------
-    $ bash build-bundle.sh init
+//-- init bash-bundle env -------------------------------------------------------
+    $ bash bash-bundle.sh init
 
 ----------------------------------------------------------------------------------
-//-- build by environment --------------------------------------------------------
+//-- the use of an environment ---------------------------------------------------
   The command below will run a default environment with keeping the reserve files
-    $ bash build-bundle.sh
+    $ bash bash-bundle.sh
 
   pro is an environment that removes the reserve compression files
-    $ bash build-bundle.sh env=pro
+    $ bash bash-bundle.sh env=pro
 
   with another environment
-    $ bash build-bundle.sh env=dev
+    $ bash bash-bundle.sh env=dev
 
 ----------------------------------------------------------------------------------
 //-- update the compression libraries --------------------------------------------
-    $ bash build-bundle.sh update
+    $ bash bash-bundle.sh update
 
 ```
 
@@ -77,7 +78,7 @@ figure 1:\
 This bash file requires 'Nodejs' and 'NPM' are already installation to compress those js and css.
 Then it will start installing any dependencies base on npm package requirements
 ```
-$ bash build-bundle.sh init
+$ bash bash-bundle.sh init
 ```
 If you wanna manually install npm's package
 1. uglifycss: \
@@ -103,13 +104,13 @@ If you wanna manually install npm's package
 Normally, the script is not be able to execute because of permission. \
 Grant execute permission in short code
 ```
-$ sudo chmod +x build-bundle.sh
+$ sudo chmod +x bash-bundle.sh
 or
-$ chmod +x build-bundle.sh
+$ chmod +x bash-bundle.sh
 ```
 Start now
 ```
-$ bash build-bundle.sh
+$ bash bash-bundle.sh
 ```
 Then it overwrites and/or created 4 files.
 1. app.base.css
@@ -135,11 +136,11 @@ Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 In production, please add argument 'env=pro' to remove 'app.base.css' and 'app.base.js'.\
 By default it won't need env=pro
 ```
-$ ./build-bundle.sh env=pro
+$ ./bash-bundle.sh env=pro
 or
-$ sh build-bundle.sh env=pro
+$ sh bash-bundle.sh env=pro
 or
-$ bash build-bundle.sh env=pro
+$ bash bash-bundle.sh env=pro
 ```
 figure 2:\
 <img width="597" alt="Screenshot 2024-03-05 at 2 08 27 in the afternoon" src="https://github.com/sitthykun/bash-bundle/assets/227092/f95b9891-d157-4be6-ae71-734390c82697">
