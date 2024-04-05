@@ -40,7 +40,7 @@ doCmd()
 
 		# filter cmd
 		if [[ ${CMD_KEY} = ${CMD_LIST_INIT} ]] ; then
-			# call initilize build-bundle
+			# call initilize bash-bundle
 			doInit
 			# exit code
 			exit 0
@@ -48,7 +48,7 @@ doCmd()
 
 		# filter cmd
 		if [[ ${CMD_KEY} = ${CMD_LIST_HELP} ]] ; then
-			# call help build-bundle
+			# call help bash-bundle
 			doHelp
 			# exit code
 			exit 0
@@ -66,7 +66,7 @@ doCmd()
 
 		# filter update package
 		if [[ ${CMD_KEY} = ${CMD_LIST_UPDATE} ]] ; then
-			# call update build-bundle
+			# call update bash-bundle
 			doUpdate
 			# exit code
 			exit 0
@@ -128,24 +128,24 @@ doHelp()
   # man
   echo "----------------------------------------------------------------------------------"
   echo "//-- help ------------------------------------------------------------------------"
-  echo "    $ bash build-bundle.sh help"
+  echo "    $ bash bash-bundle.sh help"
   echo " "
   echo "----------------------------------------------------------------------------------"
-  echo "//-- init build-bundle env -------------------------------------------------------"
-  echo "    $ bash build-bundle.sh init"
+  echo "//-- init bash-bundle env --------------------------------------------------------"
+  echo "    $ bash bash-bundle.sh init"
   echo " "
   echo "----------------------------------------------------------------------------------"
-  echo "//-- build by environment --------------------------------------------------------"
+  echo "//-- the use of an environment ---------------------------------------------------"
   echo "  The command below will run a default environment with keeping the reserve files"
-  echo "    $ bash build-bundle.sh"
+  echo "    $ bash bash-bundle.sh"
   echo "  pro is an environment that removes the reserve compression files"
-  echo "    $ bash build-bundle.sh env=pro"
+  echo "    $ bash bash-bundle.sh env=pro"
   echo "  with another environment"
-  echo "    $ bash build-bundle.sh env=dev"
+  echo "    $ bash bash-bundle.sh env=dev"
   echo " "
   echo "----------------------------------------------------------------------------------"
   echo "//-- update the compression libraries --------------------------------------------"
-  echo "    $ bash build-bundle.sh update"
+  echo "    $ bash bash-bundle.sh update"
 }
 
 # install js tools
