@@ -16,7 +16,7 @@ I'm happy to release a new version 1.4.7
 |  1.4.4 | 2024-Mar   | Fix environment  |
 |  1.4.5 | 2024-Mar  | Add a new line while merging every file and clear a file before merge was fixed  |
 |  1.4.6 | 2024-Mar  | Fix empty file  |
-|  1.4.7 | 2024-Apr  | Rename build-bundle.sh to bash-bundle, and fix on macos to make sure it works in both platforms, linux and macos  |
+|  1.4.7 | 2024-Apr  | Rename build-bundle.sh to bash-bundle.sh, and fix on macos to make sure it works in both platforms, linux and macos  |
 
 ## Command list
 ```
