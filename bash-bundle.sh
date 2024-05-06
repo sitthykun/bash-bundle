@@ -79,7 +79,7 @@ doCmd()
 doCss()
 {
 	# inform
-	printf "\n\e[93mCombining CSS ..."
+	printf "\n\e[93mCombining CSS ...\n"
 
 	# create app file
 	if [ ! -e $AppCss ]; then
@@ -170,7 +170,7 @@ doInit()
 doJs()
 {
 	# inform
-	printf "\n\e[93mCombining JS ..."
+	printf "\n\e[93mCombining JS ...\n"
 
 	# create app file
 	if [ ! -e $AppJsBase ]; then
