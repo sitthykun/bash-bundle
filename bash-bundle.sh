@@ -235,6 +235,7 @@ doUpdate()
 # print out third party versions
 printVersion()
 {
+	# https://misc.flogisoft.com/bash/tip_colors_and_formatting
 	echo "****** Version ***************"
 	node_modules/uglifycss/uglifycss --version
 	node_modules/terser/bin/terser --version
