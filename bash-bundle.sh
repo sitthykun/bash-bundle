@@ -216,7 +216,7 @@ doJs()
 # inform
 doResult()
 {
-	printf "\n\e[93m Find them ...\n"
+	printf "\n\e[93mFind them ...\n"
 	echo " > $AppCss"
 	echo " > $AppJs"
 }
@@ -250,7 +250,7 @@ doCmd $@
 printVersion
 
 # start block
-printf "\e[92m Start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+printf "\e[92mStart >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 # css starting
 doCss
 # js starting
@@ -258,4 +258,4 @@ doJs
 # output path
 doResult
 # end block
-printf "\e[92m Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
+printf "\e[92mDone <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
