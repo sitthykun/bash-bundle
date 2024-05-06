@@ -240,7 +240,7 @@ printVersion()
 	node_modules/uglifycss/uglifycss --version
 	node_modules/terser/bin/terser --version
 	echo "****** More information ******"
-	echo "$ bash build-bundle.sh help"
+	echo "$ bash bash-bundle.sh help"
 	echo "****** **************** ******"
 }
 
