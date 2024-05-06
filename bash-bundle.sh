@@ -2,7 +2,7 @@
 # author: masakokh
 # year: 2024
 # note: build client bundle
-# version: 1.4.7
+# version: 1.4.8
 # argument command
 CMD_KEY=''
 CMD_VALUE=''
@@ -40,7 +40,7 @@ doCmd()
 
 		# filter cmd
 		if [[ ${CMD_KEY} = ${CMD_LIST_INIT} ]] ; then
-			# call initilize bash-bundle
+			# call initialize bash-bundle
 			doInit
 			# exit code
 			exit 0
@@ -79,7 +79,7 @@ doCmd()
 doCss()
 {
 	# inform
-	echo -e "\e[93mCombining CSS ..."
+	printf "\n\e[93mCombining CSS ..."
 
 	# create app file
 	if [ ! -e $AppCss ]; then
@@ -93,7 +93,7 @@ doCss()
 	# create base file
 	if [ ! -e $AppCssBase ]; then
     	touch $AppCssBase
-  else
+	else
 		# linux and mac
 	  	# truncate -s 0 $AppJsBase
     	cat /dev/null > $AppCssBase
@@ -152,16 +152,16 @@ doHelp()
 doInit()
 {
 	# inform
-	echo -e "\e[93mInitialize ..."
+	printf "\n\e[93mInitialize ..."
 	# update npm
 	# more: https://docs.npmjs.com/try-the-latest-stable-version-of-npm
 	#npm install -g npm@latest
 
-	echo -e "\e[93mInstalling uglifycss ..."
+	printf "\n\e[93mInstalling uglifycss ..."
 	# optimize css
 	npm install uglifycss
 
-	echo -e "\e[93mInstalling terser ..."
+	printf "\n\e[93mInstalling terser ..."
 	# optimize js
 	npm install terser
 }
@@ -170,7 +170,7 @@ doInit()
 doJs()
 {
 	# inform
-	echo -e "\e[93mCombining JS ..."
+	printf "\n\e[93mCombining JS ..."
 
 	# create app file
 	if [ ! -e $AppJsBase ]; then
@@ -216,7 +216,7 @@ doJs()
 # inform
 doResult()
 {
-	echo -e "\e[93mFind them ..."
+	printf "\n\e[93m Find them ...\n"
 	echo " > $AppCss"
 	echo " > $AppJs"
 }
@@ -225,18 +225,22 @@ doResult()
 doUpdate()
 {
 	# Update
-	echo -e "\e[93mUpdating ..."
+	printf "\e[92m Updating ..."
 	# optimize css
 	npm update
-
-	echo -e "\e[93mFinishing ..."
+	# Finish
+	printf "\e[92m Finishing ..."
 }
 
 # print out third party versions
 printVersion()
 {
+	echo "****** Version ***************"
 	node_modules/uglifycss/uglifycss --version
 	node_modules/terser/bin/terser --version
+	echo "****** More information ******"
+	echo "$ bash build-bundle.sh help"
+	echo "****** **************** ******"
 }
 
 # check cmd
@@ -246,7 +250,7 @@ doCmd $@
 printVersion
 
 # start block
-echo -e "\e[92mStarting >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+printf "\e[92m Start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 # css starting
 doCss
 # js starting
@@ -254,4 +258,4 @@ doJs
 # output path
 doResult
 # end block
-echo -e "\e[92mDone <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+printf "\e[92m Done <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
